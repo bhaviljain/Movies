@@ -36,3 +36,485 @@
     transform: rotate(360deg);
   }
 }
+.img{
+  height: 30vh;
+  margin-top: 5px;
+}
+.main-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+.title{
+  width: 8rem;
+  text-align: center;
+}
+li{
+  list-style-type: none;
+}
+.routes{
+  text-decoration: none;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.routes:hover{
+  text-decoration:underline;
+  color: yellow;
+}
+.nav-container{
+  background-color: black;
+  width: 100%;
+  padding: 20px;
+  display: flex; 
+  justify-content: space-evenly;
+  
+}
+.logout-btn{
+  background-color: red;
+  border-radius: 20px;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logout-btn:hover{
+  color: red;
+  background-color: white;
+
+}
+
+#routes{
+  font-size: 35px;
+  color: red;
+  font-weight: 600;
+  margin-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.nav-comp{
+  display: flex;
+}
+.main-comp{
+  height: 100%;
+  background-color: rgb(225, 222, 222);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+}
+.profile-comp{
+  display: flex;
+  border: 2px solid gray;
+  width: 130px;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+.profile-img{
+  height: 4vh;
+  border: 2px solid black;
+  border-radius: 100px;
+  margin-top: 5px;
+
+}
+.user-comp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  /* text-align: center; */
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 200;
+}
+.search-comp{
+  display: flex;
+  justify-content: center;
+}
+.search-bar{
+  margin-top: 10px;  
+  border-radius: 20px;
+  width: 40vw;
+  padding-top: 20px;
+}
+input::placeholder{
+  text-align: center;
+}
+.search-btn{
+ background: none;
+ margin-top: 12px;
+ height: 36px;
+ border: white;
+background-color: #bbbcbf;
+border-radius: 20px;
+font-weight: 700;
+}
+.search-btn:hover{
+  background-color: #96979a;
+}
+.watch-img{
+background-color: transparent;  
+border: none;
+}
+
+.watchlist-img{
+  height: 30px;
+}
+.text{
+  font-size: 15px;
+  display: none;
+}
+.show{
+  display: block;
+}
+
+
+
+@media (min-width: 375px) and (max-width: 667px) {
+  
+  /* CSS */
+  .img{
+    height: 20vh;
+    margin-top: 5px;
+  }
+  .main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    
+  }
+  .title{
+    width: 8rem;
+    text-align: center;
+    font-size: 15px;
+  }
+  #routes{
+    font-size: 30px;
+    color: red;
+    font-weight: 600;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+ 
+  .nav-container{
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+    display: flex; 
+    gap: 4px;
+    justify-content: space-evenly;
+    
+  }
+  .logout-btn{
+    background-color: red;
+    border-radius: 20px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  
+  .main-comp{
+    height: 100%;
+    background-color: rgb(225, 222, 222);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+  }
+  .profile-comp{
+    display: flex;
+    border: 2px solid gray;
+    width: 130px;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    margin-left: 5%;
+  }
+  .profile-img{
+   
+    margin-top: 3px;
+  
+  }
+  
+  .search-comp{
+    display: flex;
+    justify-content: center;
+    margin-left: 70px;
+  }
+  .search-bar{
+    margin-top: 10px;  
+    border-radius: 20px;
+    width: 45vw;
+    padding-top: 20px;
+  }
+  input::placeholder{
+    text-align: center;
+  }
+  .search-btn{
+   background: none;
+   margin-top: 12px;
+   height: 36px;
+   border: white;
+  background-color: #bbbcbf;
+  border-radius: 20px;
+  font-weight: 700;
+  }
+  
+  .watchlist-img{
+    height: 25px;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 414px) and (max-width: 896px) {
+  
+  /* CSS */
+  
+  .main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-right: 28px;
+  }
+ 
+  .profile-comp{
+    display: flex;
+    border: 2px solid gray;
+    width: 130px;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    margin-left: 5%;
+  }
+  .profile-img{
+       height: 25px;
+  
+  }
+  
+  .search-comp{
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+  }
+  .search-bar{
+    margin-top: 10px;  
+    border-radius: 20px;
+    width: 45vw;
+    padding-top: 20px;
+  }
+  input::placeholder{
+    text-align: center;
+  }
+  .search-btn{
+   background: none;
+   margin-top: 12px;
+   height: 36px;
+   border: white;
+  background-color: #bbbcbf;
+  border-radius: 20px;
+  font-weight: 700;
+  }
+  
+  .watchlist-img{
+    height: 25px;
+  }
+
+  
+}
+
+@media (min-width: 412px) and (max-width: 915px) {
+  
+  /* CSS */
+  
+  .main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .profile-img{
+       height: 25px;
+  }
+  .search-comp{
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* CSS */
+  img{
+    height: 15vh;
+    margin-top: 5px;
+  }
+  .main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    
+  }
+  .title{
+    width: 8rem;
+    text-align: center;
+    font-size: 15px;
+  }
+  #routes{
+    font-size: 30px;
+    color: red;
+    font-weight: 600;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+ 
+  .nav-container{
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+    display: flex; 
+    gap: 4px;
+    justify-content: space-evenly;
+    
+  }
+  .logout-btn{
+    background-color: red;
+    border-radius: 20px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .main-comp{
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+  }
+ 
+  .profile-img{
+   
+    margin-top: 5px;
+  
+  }  
+}
+
+@media (min-width: 344px) and (max-width: 882px) {
+  
+  /* CSS */
+  .img{
+    height: 20vh;
+    margin-top: 5px;
+  }
+  .main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+   
+  }
+  .title{
+    width: 7rem;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .main-comp{
+    height: 100%;
+    background-color: rgb(225, 222, 222);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+  }
+
+  .profile-img{
+    height: 2.5vh;    
+  }
+  .search-comp{
+
+    padding-left: 100px;
+  }
+  .search-bar{
+    width: 100vw;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1280px) {
+  
+  /* CSS */
+  .img{
+    height: 25vh;
+    margin-top: 5px;
+  }
+  .main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .profile-img{
+    height: 35px;
+  }
+  .main-comp{
+    height: 100%;
+    background-color: rgb(225, 222, 222);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 13.5rem;
+  }
+  .search-bar{
+    width: 60vw;
+  }
+  
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .img{
+    height: 20vh
+  }
+  /* CSS */
+  
+}
+@media (min-width: 853px) and (max-width: 1280px) {
+  
+  /* CSS */ .img{
+    height: 20vh
+  }
+  
+  
+}
+
+@media (min-width: 820px) and (max-width: 1180px) {
+  
+  /* CSS */
+  .img{
+    height: 20vh;
+    margin-top: 5px;
+  }
+  .main-comp{
+    height: 100%;
+    background-color: rgb(225, 222, 222);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 14.5rem;
+  }
+  
+}
