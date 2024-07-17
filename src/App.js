@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import Login from './components/Login';
+import Login from './components/Login/Login';
 import MovieList from './components/MovieList';
 import Watchlist from './components/Watchlist';
-import { setUserWatchlist } from './features/movieSlice';
-import { logout } from './features/authSlice';
+import { setUserWatchlist } from './ReduxSlice/movieSlice';
+import { logout } from './ReduxSlice/authSlice';
 import { Link } from "react-router-dom";
-import PageNotFound from './components/PageNotFound';
+import PageNotFound from './components/ErrorHandle/PageNotFound';
 
 
 const App = () => {

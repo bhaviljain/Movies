@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
-import { setMovies, addToWatchlist } from '../features/movieSlice';
+import { setMovies, addToWatchlist } from '../ReduxSlice/movieSlice';
 import "../../src/App.css"
 
 const MovieList = () => {

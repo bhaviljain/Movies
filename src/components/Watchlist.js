@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { removeFromWatchlist } from '../features/movieSlice';
+import { removeFromWatchlist } from '../ReduxSlice/movieSlice';
 
 const Watchlist = () => {
   const dispatch = useDispatch();
