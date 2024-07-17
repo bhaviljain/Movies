@@ -13,16 +13,16 @@ const movieSlice = createSlice({
     watchlist: getWatchlistFromLocalStorage(),
   },
   reducers: {
+    //for storing the movies
     setMovies(state, action) {
       state.movies = action.payload;
     },
+    //adding movies into particular user account
     addToWatchlist(state, action) {
-      const { user, movie ,imdbID} = action.payload;
-      if (!state.watchlist[user]) {
-        state.watchlist[user] = [];
-      }
-      
+      const { user, movie} = action.payload;
+    
       state.watchlist[user]?.push(movie);
+      //storing it in local storage
       localStorage.setItem('watchlist', JSON.stringify(state.watchlist));
     },
     removeFromWatchlist(state, action) {
@@ -32,6 +32,7 @@ const movieSlice = createSlice({
         localStorage.setItem('watchlist', JSON.stringify(state.watchlist));
       }
     },
+    //store user details with its watchList
     setUserWatchlist(state, action) {
       state.watchlist[action.payload.user] = action.payload.watchlist;
     },

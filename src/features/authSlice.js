@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-// Retrieve user from localStorage
+// receive user from localStorage
 const getUserFromLocalStorage = () => {
   const user = localStorage.getItem('user');
   return user ? JSON.parse(user) : null;
@@ -9,15 +9,15 @@ const getUserFromLocalStorage = () => {
 const authSlice = createSlice({
   name: 'auth',
   initialState: {
-    user: getUserFromLocalStorage(),
+    users: getUserFromLocalStorage(),
   },
   reducers: {
     login(state, action) {
-      state.user = { email: action.payload };
-      localStorage.setItem('user', JSON.stringify(state.user));
+      state.users = { email: action.payload };
+      localStorage.setItem('user', JSON.stringify(state.users));
     },
     logout(state) {
-      state.user = null;
+      state.users = null;
       localStorage.removeItem('user');
     },
   },

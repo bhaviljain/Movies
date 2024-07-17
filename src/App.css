@@ -1,40 +1,49 @@
-.App {
-  text-align: center;
+body{
+  height: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-page{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.login-input{
+  width: 30%;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
 }
+.login-btn{
+background-color: rgb(79, 79, 211);
+margin-top: 3px;
+width: 15%;
+padding: 3px;
+border-radius: 20px;
+}
+.show-login-msg{
+  display: block;
+}
+.dont-show-login-msg{
+  display: none;
+}
+.login-validation{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: red;
+}
+.delete-btn{
+  margin-top: 5px;
+  background-color: transparent;
+  margin-bottom: 5px;
+  border: none;
+  cursor: pointer;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.delete-img{
+ height: 25px;
+}
+.delete-img:hover{
+ background-color: rgba(246, 22, 22, 0.704);
+ border-radius: 100px;
 }
 .img{
   height: 30vh;
@@ -81,7 +90,9 @@ li{
   background-color: white;
 
 }
-
+.watchlist{
+  margin-left: 4px;
+}
 #routes{
   font-size: 35px;
   color: red;
@@ -135,6 +146,7 @@ li{
   border-radius: 20px;
   width: 40vw;
   padding-top: 20px;
+  text-align: center;
 }
 input::placeholder{
   text-align: center;
@@ -154,18 +166,47 @@ font-weight: 700;
 .watch-img{
 background-color: transparent;  
 border: none;
+cursor: pointer;
 }
 
 .watchlist-img{
   height: 30px;
 }
+.watchlist-img:hover{
+background-color: gray;
+}
 .text{
   font-size: 15px;
+  position: absolute;
+  top: 250px;
+  left: 45%;
+  z-index: 2;
+  background-color: white;
+  padding: 20px;
   display: none;
 }
+
 .show{
   display: block;
 }
+.close-btn{
+  position: relative;
+  bottom: 20px;
+  right: 17px;
+  background-color: red;
+  border-radius: 100px;
+  padding-left: 4px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+.dont-show-main-container{
+  filter: blur(10px);
+}
+.show-main-container{
+  filter: blur(0px);
+}
+
+
 
 
 
